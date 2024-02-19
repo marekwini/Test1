@@ -1,0 +1,50 @@
+# Let's create a sample HTML content for an index.html page.
+
+html_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Home Page</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>This is a paragraph about the company.</p>
+        </section>
+        <section>
+            <h2>Our Services</h2>
+            <p>Details about the services we offer.</p>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <p>Information on how to contact the company.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Company Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+"""
+
+# Saving the HTML content to a file named index.html
+index_file_path = '/mnt/data/index.html'
+
+with open(index_file_path, 'w') as file:
+    file.write(html_content)
+
+index_file_path
